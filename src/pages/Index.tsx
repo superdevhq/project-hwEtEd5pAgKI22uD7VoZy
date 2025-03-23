@@ -1,10 +1,20 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { Deck, Slide, TitleSlide, ContentSlide, ListSlide, QuoteSlide, ImageSlide, SplitSlide } from "@/components/Presentation";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
     <div className="h-screen w-full bg-gradient-to-br from-background to-muted">
+      <div className="absolute top-4 right-4 z-20">
+        <Link to="/coding">
+          <Button variant="outline" className="bg-background/80 backdrop-blur-sm">
+            View Coding Deck
+          </Button>
+        </Link>
+      </div>
+      
       <Deck>
         <Slide id="welcome">
           <TitleSlide 
@@ -12,7 +22,7 @@ const Index = () => {
             subtitle="A simple, elegant way to create presentations in React" 
           />
         </Slide>
-        
+
         <Slide id="features">
           <ContentSlide title="Key Features">
             <ListSlide 
