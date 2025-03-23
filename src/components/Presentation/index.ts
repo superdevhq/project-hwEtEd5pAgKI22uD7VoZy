@@ -8,6 +8,5 @@ export {
   SplitSlide,
   ImageSlide,
   ListSlide,
-  QuoteSlide,
-  CodeSlide
+  QuoteSlide
 } from './SlideLayouts';
